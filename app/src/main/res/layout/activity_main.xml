@@ -43,6 +43,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
+        android:onClick="clickStart"
         android:text="@string/button_start"
         app:layout_constraintEnd_toStartOf="@+id/buttonStop"
         app:layout_constraintHorizontal_bias="0.5"
@@ -56,6 +57,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="@string/button_stop"
+        android:onClick="clickStop"
         app:layout_constraintBaseline_toBaselineOf="@+id/buttonStart"
         app:layout_constraintEnd_toStartOf="@+id/buttonRestart"
         app:layout_constraintHorizontal_bias="0.5"
@@ -67,8 +69,30 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
         android:text="@string/button_restart"
+        android:onClick="clickRestart"
         app:layout_constraintBaseline_toBaselineOf="@+id/buttonStop"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/buttonStop" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/info_service_settings"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonStart" />
+
+    <TextView
+        android:id="@+id/textinfoSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/label_settings"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 </androidx.constraintlayout.widget.ConstraintLayout>
